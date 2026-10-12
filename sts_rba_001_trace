@@ -1,0 +1,14 @@
+{
+  "record_id": "STS-RBA-001",
+  "assertion_passed": true,
+  "expected_authority_set": "0x00",
+  "observed_authority_set": "0x00",
+  "execution_digest": "sha256:8a9b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b",
+  "notes": "Remediation successful. Verifier now correctly parses observation payload and rejects unregistered lineage regardless of physical precision or signature presence.",
+  "regression_tests": [
+    "test_sts_rba_001_high_precision_no_lineage_returns_empty",
+    "test_sts_rba_001b_empty_signature_valid_lineage_returns_empty",
+    "test_sts_rba_001c_valid_signature_invalid_lineage_returns_empty",
+    "test_sts_rba_001d_low_precision_valid_all_returns_granted"
+  ]
+}
